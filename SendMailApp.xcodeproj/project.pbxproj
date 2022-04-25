@@ -8,17 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		9D3624CF28170C0D0088654C /* SendMailAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D3624CE28170C0D0088654C /* SendMailAppApp.swift */; };
-		9D3624D128170C0D0088654C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D3624D028170C0D0088654C /* ContentView.swift */; };
 		9D3624D328170C120088654C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9D3624D228170C120088654C /* Assets.xcassets */; };
 		9D3624D628170C120088654C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9D3624D528170C120088654C /* Preview Assets.xcassets */; };
+		9D3624E428170DD20088654C /* Email.txt in Resources */ = {isa = PBXBuildFile; fileRef = 9D3624E328170DD20088654C /* Email.txt */; };
+		9D3624E6281710700088654C /* MailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D3624E5281710700088654C /* MailView.swift */; };
+		9D3624E8281712390088654C /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D3624E7281712390088654C /* HomeView.swift */; };
+		9D3624EA281712DA0088654C /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D3624E9281712DA0088654C /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		9D3624CB28170C0D0088654C /* SendMailApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SendMailApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D3624CE28170C0D0088654C /* SendMailAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendMailAppApp.swift; sourceTree = "<group>"; };
-		9D3624D028170C0D0088654C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		9D3624D228170C120088654C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9D3624D528170C120088654C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		9D3624DF28170D140088654C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9D3624E328170DD20088654C /* Email.txt */ = {isa = PBXFileReference; explicitFileType = text; path = Email.txt; sourceTree = "<group>"; };
+		9D3624E5281710700088654C /* MailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MailView.swift; sourceTree = "<group>"; };
+		9D3624E7281712390088654C /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		9D3624E9281712DA0088654C /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,9 +58,8 @@
 		9D3624CD28170C0D0088654C /* SendMailApp */ = {
 			isa = PBXGroup;
 			children = (
-				9D3624CE28170C0D0088654C /* SendMailAppApp.swift */,
-				9D3624D028170C0D0088654C /* ContentView.swift */,
-				9D3624D228170C120088654C /* Assets.xcassets */,
+				9D3624E228170DBD0088654C /* Utilities */,
+				9D3624DC28170CC50088654C /* Views */,
 				9D3624D428170C120088654C /* Preview Content */,
 			);
 			path = SendMailApp;
@@ -65,6 +71,27 @@
 				9D3624D528170C120088654C /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		9D3624DC28170CC50088654C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				9D3624E5281710700088654C /* MailView.swift */,
+				9D3624E7281712390088654C /* HomeView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		9D3624E228170DBD0088654C /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				9D3624CE28170C0D0088654C /* SendMailAppApp.swift */,
+				9D3624D228170C120088654C /* Assets.xcassets */,
+				9D3624DF28170D140088654C /* Info.plist */,
+				9D3624E328170DD20088654C /* Email.txt */,
+				9D3624E9281712DA0088654C /* Constants.swift */,
+			);
+			path = Utilities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,6 +152,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9D3624E428170DD20088654C /* Email.txt in Resources */,
 				9D3624D628170C120088654C /* Preview Assets.xcassets in Resources */,
 				9D3624D328170C120088654C /* Assets.xcassets in Resources */,
 			);
@@ -137,8 +165,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9D3624D128170C0D0088654C /* ContentView.swift in Sources */,
 				9D3624CF28170C0D0088654C /* SendMailAppApp.swift in Sources */,
+				9D3624E8281712390088654C /* HomeView.swift in Sources */,
+				9D3624E6281710700088654C /* MailView.swift in Sources */,
+				9D3624EA281712DA0088654C /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,6 +300,8 @@
 				DEVELOPMENT_TEAM = RKA7R98LN8;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SendMailApp/Utilities/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -299,6 +331,8 @@
 				DEVELOPMENT_TEAM = RKA7R98LN8;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SendMailApp/Utilities/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
